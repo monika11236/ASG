@@ -1,0 +1,19 @@
+1. Config.yaml file is having all the parameter values.Please change or create the directories as per the config file.
+2. Database to be created manually.
+
+
+Steps to follow before running the airflow tasks:
+
+1. Create database on hive CR_investment_M
+2. Tables should be created only after database is created or else code will fail on hive_schema during create table run.
+3. Input files to be present on location :/home/cloudera/docm(As per config.yaml file)
+4. Make directories:
+-> mkdir /home/cloudera/docm
+-> mkdir /home/cloudera/out_m
+5. chmod 777 /home/cloudera/docm
+   chmod 777 /home/cloudera/out_m
+6. Files after run will be available at
+-> hdfs dfs -cat /home/cloudera/out_m/Summary_Report/*
+-> hdfs dfs -cat /home/cloudera/out_m/List_report/*
+
+

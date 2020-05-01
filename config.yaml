@@ -1,0 +1,6 @@
+dag_id: dag_m
+hive_schema: CR_investment_M
+input_path: /home/cloudera/docm
+output_path: /home/cloudera/out_m
+hive_connection: hive_cli_default
+project_home:/home/cloudera/
